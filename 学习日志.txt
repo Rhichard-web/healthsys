@@ -1,3 +1,38 @@
+2023.12.13
+
+    一、Vue的调试
+    问题：
+    1.vue版本不对，启动报错
+
+    检查自己版本，如果是vue3，导入依赖时不是导入element ui而是element plus
+    注意事项：
+    2.运行后显示空白页，报错：
+    Uncaught ReferenceError: App is not defined
+    在element.js中删除app的引用
+
+
+    1.一定要在对应的路径下安装
+     cd e:/vue_space01/healsys
+
+    3.导入element plus后，要在项目的element.js中修改相应的vue3导入方式
+    // Vue 3 的导入方式
+    import { createApp } from 'vue';
+    import ElementPlus from 'element-plus';
+    import 'element-plus/dist/index.css';
+
+    const app = createApp(App);
+    app.use(ElementPlus);
+    // ...其他代码
+
 2023.12.20
-从Github导入springboot项目后，如idea没自动安装依赖：
-右键pom.xml文件，reload maven手动配置即可
+
+    从Github导入springboot项目后，如idea没自动安装依赖：
+    右键pom.xml文件，reload maven手动配置即可
+
+2023.12.21
+
+    git pull github master (更新github的healthsys到本地)
+    问题：超时问题，换源（chat01）
+
+    git push github master (上传本地的healthsys的github)
+
