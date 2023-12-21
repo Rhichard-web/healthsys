@@ -29,10 +29,18 @@
     从Github导入springboot项目后，如idea没自动安装依赖：
     右键pom.xml文件，reload maven手动配置即可
 
-2023.12.21
-
+    在宿舍电脑：
     git pull github master (更新github的healthsys到本地)
     问题：超时问题，换源（chat01）
 
     git push github master (上传本地的healthsys的github)
+    HP电脑：
+    git pull origin master
 
+2023.12.21
+    1,在vue中新建了文件，要运用一定要在router的index中添加引用
+
+    2，User表实体创建：
+        在创建完所有元素，添加空和满的方法User(){},再添加get，set，最后重写toString
+
+    3，在Controller中，加入注解@RestController
