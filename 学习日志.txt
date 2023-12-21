@@ -44,3 +44,12 @@
         在创建完所有元素，添加空和满的方法User(){},再添加get，set，最后重写toString
 
     3，在Controller中，加入注解@RestController
+
+    报错：Please commit your changes or stash them before you merge.
+    问题原因是其他人修改了某个文件并提交到版本库中去了，而本地也修改了同一个，这时候进行拉取就会出现冲突了
+    方法：放弃本地修改
+        git reset --hard
+        git pull
+
+    4，视频==》P14：
+    写UserDao =》映射文件mapper.UserMapping =》在HealthsysApplication中添加扫描Dao层
