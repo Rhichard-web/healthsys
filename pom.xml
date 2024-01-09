@@ -8,10 +8,10 @@
 		<version>2.2.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.naughty</groupId>
-	<artifactId>userlogin02</artifactId>
+	<groupId>cn.chan</groupId>
+	<artifactId>healthsys</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>userlogin02</name>
+	<name>healthsys</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -38,6 +38,13 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>mysql</groupId>-->
+			<!--<artifactId>mysql-connector-java</artifactId>-->
+			<!--<version>5.1.49</version> &lt;!&ndash; 或者您选择的任何与 MySQL 5.5.28 兼容的版本 &ndash;&gt;-->
+		<!--</dependency>-->
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

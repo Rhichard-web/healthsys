@@ -1,0 +1,27 @@
+    一，流程：1、在bean中建立实体，建立对应的Dao层--UserDao，
+              2、接着建立他的映射和查询语句，UserMapper，
+              3、最后在Controller中调用UserDao中接口的方法
+              4、前端编写
+
+
+Bean：
+    一，创建所有参数
+    二，添加空和满参数
+    三，添加get、set方法
+    四，改写toString（）
+
+
+Dao层：
+
+    一，新建对应的Dao层后，加入注解：
+        1、@Repository
+
+Mapper层：
+
+    一，
+
+Controller层：
+
+    二，新建对应的Controller后，加入注解：
+        1、@RestController           //让Controller加载
+        2、@RequestMapping("/xxxx")  //对应的网址

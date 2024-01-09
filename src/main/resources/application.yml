@@ -1,5 +1,4 @@
 
-# mysql
 spring:
   datasource:
     #MySQL配置
@@ -13,3 +12,5 @@ mybatis:
   type-aliases-package: com.example.demo.model
 server:
   port: 9000
+
+

@@ -1,7 +1,6 @@
 package cn.chan.healthsys.bean;
 
 public class User {
-
     private int id;
     private String username;
     private String password;
@@ -10,14 +9,6 @@ public class User {
     private boolean state;
 
     public User() {
-    }
-
-    public User(String username, String password, String email, String role, boolean state) {
-        this.username = username;
-        this.password = password;
-        this.email = email;
-        this.role = role;
-        this.state = state;
     }
 
     public int getId() {
@@ -32,16 +23,16 @@ public class User {
         return password;
     }
 
+    public boolean isState() {
+        return state;
+    }
+
     public String getEmail() {
         return email;
     }
 
     public String getRole() {
         return role;
-    }
-
-    public boolean getState() {
-        return state;
     }
 
     public void setId(int id) {

@@ -53,3 +53,16 @@
 
     4，视频==》P14：
     写UserDao =》映射文件mapper.UserMapping =》在HealthsysApplication中添加扫描Dao层
+
+2023.12.22
+
+    1,新项目配置maven，右键pom.xml添加maven
+
+2023.12.23
+
+    1,报错：
+        with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): cn.chan.healthsys.dao.UserDao.getUserByMassage] with root cause
+        因为：mapper映射包没有建好
+    2,async：
+        用于异步请求，在这里用到是因为先等网页进来，再加载导航栏，防止先请求导航数据。
+        是一个 JavaScript 关键字，用于声明一个函数是异步的。它是与 await 关键字一起使用的，通常用于处理异步操作，如网络请求、文件读写等。
